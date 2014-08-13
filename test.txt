@@ -1,0 +1,14 @@
+- (IBAction)toggleLocationUpdateMode:(id)sender;
+- (IBAction)toggleRecording:(id)sender;
+- (void)viewDidLoad
+- (void)viewDidUnload
+- (void)cleanup
+- (void)applicationDidBecomeActive:(NSNotification*)notifcation
+- (void)deviceOrientationDidChange
+- (IBAction)toggleRecording:(id)sender
+- (IBAction)toggleLocationUpdateMode:(id)sender
+- (void)recordingWillStart
+- (void)recordingDidStart
+- (void)recordingWillStop
+- (void)recordingDidStop
+- (void)newLocationUpdate:(NSString *)locationDescription

@@ -1,0 +1,28 @@
+- (id)init
+- (void)writeSampleBuffer:(CMSampleBufferRef)sampleBuffer ofType:(NSString *)mediaType
+- (BOOL)setupAssetWriterAudioInput:(CMFormatDescriptionRef)currentFormatDescription
+- (BOOL)setupAssetWriterVideoInput:(CMFormatDescriptionRef)currentFormatDescription
+- (BOOL)setupAssetWriterMetadataInputAndMetadataAdaptor
+- (void)startRecording
+- (void)stopRecording
+- (void)setDistanceUpdateInMeters:(CGFloat)distanceUpdateInMeters
+- (CGFloat)distanceUpdateInMeters
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
+- (BOOL)inputsReadyToRecord
+- (AVCaptureDevice *)videoDeviceWithPosition:(AVCaptureDevicePosition)position
+- (AVCaptureDevice *)audioDevice
+- (BOOL)setupCaptureSession
+- (void)setupAndStartCaptureSession
+- (void)pauseCaptureSession
+- (void)resumeCaptureSession
+- (void)captureSessionStoppedRunningNotification:(NSNotification *)notification
+- (void)stopAndTearDownCaptureSession
+- (void)saveMovieToCameraRoll
+- (void)removeFile:(NSURL *)fileURL
+- (CMTime)cmTimeForNSDate:(NSDate *)date
+- (CMTime)movieTimeForLocationTime:(NSDate *)date
+- (CGFloat)angleOffsetFromPortraitOrientationToOrientation:(AVCaptureVideoOrientation)orientation
+- (CGAffineTransform)transformFromCurrentVideoOrientationToOrientation:(AVCaptureVideoOrientation)orientation
+- (AVCaptureSession *)session
+- (void)showError:(NSError *)error

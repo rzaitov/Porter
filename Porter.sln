@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porter", "Porter\Porter.csproj", "{F07C34AF-D4B4-4B6B-A5E9-78344521CD73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F07C34AF-D4B4-4B6B-A5E9-78344521CD73}.Debug|x86.ActiveCfg = Debug|x86
+		{F07C34AF-D4B4-4B6B-A5E9-78344521CD73}.Debug|x86.Build.0 = Debug|x86
+		{F07C34AF-D4B4-4B6B-A5E9-78344521CD73}.Release|x86.ActiveCfg = Release|x86
+		{F07C34AF-D4B4-4B6B-A5E9-78344521CD73}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Porter\Porter.csproj
+	EndGlobalSection
+EndGlobal
