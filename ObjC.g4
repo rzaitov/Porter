@@ -271,7 +271,7 @@ encode_expression:
 	'@encode' '(' type_name ')';
 
 type_variable_declarator:
-	declaration_specifiers declarator;
+	declaration_specifiers declarator?;
 
 try_statement:
 	'@try' compound_statement;
