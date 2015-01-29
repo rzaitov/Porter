@@ -45,6 +45,7 @@
     <Compile Include="ObjCParser.cs" />
     <Compile Include="InterfaceExtruder.cs" />
     <Compile Include="ObjCListnerImpl.cs" />
+    <Compile Include="Overrides.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

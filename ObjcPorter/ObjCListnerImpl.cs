@@ -20,11 +20,25 @@ namespace ObjcPorter
 			string selector = md.method_selector ().GetText ();
 			sb.Append (selector);
 
-			var declaratorList = md.init_declarator_list ();
-			if (declaratorList != null) {
+			Console.WriteLine (sb);
+		}
+
+		public override void ExitProperty_declaration (ObjCParser.Property_declarationContext context)
+		{
+			var sb = new StringBuilder ();
+			sb.Append ("@property");
+			sb.Append (' ');
+
+			var attributes = context.property_attributes_declaration ();
+			if (attributes != null) {
+				sb.Append (attributes.GetText ());
 				sb.Append (' ');
-				sb.Append (declaratorList.GetText ());
 			}
+
+			var structDeclaration = context.struct_declaration ();
+			sb.Append (structDeclaration.specifier_qualifier_list().GetText());
+			sb.Append (' ');
+			sb.Append (structDeclaration.struct_declarator_list ().GetText ());
 
 			Console.WriteLine (sb);
 		}
