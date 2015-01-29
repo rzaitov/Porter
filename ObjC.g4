@@ -697,6 +697,7 @@ UnicodeEscape
     ;
 
 IMPORT : '#import' [ \t]* (STRING|ANGLE_STRING) WS -> channel(HIDDEN) ;
+OBJCIMPORT : '@import'  [ \t]* LETTER+ ';' -> channel(HIDDEN) ;
 INCLUDE: '#include'[ \t]* (STRING|ANGLE_STRING) WS -> channel(HIDDEN) ;
 PRAGMA : '#pragma' ~[\r\n]* -> channel(HIDDEN) ;
 
